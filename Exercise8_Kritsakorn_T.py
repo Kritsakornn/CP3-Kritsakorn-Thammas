@@ -15,10 +15,10 @@ if username == "Kritsakorn" and password == "123456789":
     tomato_price = 50
     if userSelected == 1:
         price = chicken_price * total_of_goods
-        print("you need to pay " + str(price) + "THB")
+        print("you have to pay " + str(price) + "THB")
     elif userSelected == 2:
         price = meat_price * total_of_goods
-        print("you need to pay " + str(price) + "THB")
+        print("you have to pay " + str(price) + "THB")
     elif userSelected == 3:
         price = tomato_price * total_of_goods
-        print("you need to pay " + str(price) + "THB")
+        print("you have to pay " + str(price) + "THB")
