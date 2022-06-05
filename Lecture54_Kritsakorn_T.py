@@ -10,7 +10,7 @@ def showMenu():
     print("1. Vat Calculator")
     print("2. Price Calculator")
 def menuSelect():
-    userSelected = int(input(">>"))
+    userSelected = int(input(">> "))
     return userSelected
 def vatCalculate(totalPrice):
     vat = 7
@@ -21,13 +21,17 @@ def priceCalculate():
     price2 = int(input("Second Product Price : "))
     return vatCalculate(price1 + price2)
 
-login()
-showMenu()
-UserSelected = menuSelect()
-if UserSelected == 1:
-    totalPrice = int(input("Price (THB): "))
-    print(vatCalculate(totalPrice))
-elif UserSelected == 2:
-    print(priceCalculate())
+login = login()
+if login == True:
+    showMenu()
+    UserSelected = menuSelect()
+    if UserSelected == 1:
+        totalPrice = int(input("Price (THB): "))
+        print(vatCalculate(totalPrice))
+    elif UserSelected == 2:
+        print(priceCalculate())
+elif login == False:
+    print("Wrong password or username.")
+
 
 
