@@ -11,7 +11,7 @@ def showBill():
     for number in range(len(menuList)):
         print(menuList[number][0], menuList[number][1])
         totalPrice += menuList[number][1]
-    print(totalPrice)
+    print("totalPrice:",totalPrice)
 def userMenu():
     while True:
         menuName = input("Plese Enter Menu : ")
